@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Prateek Rasalkar-Portfolio</title>
+    <style>
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    </style>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: white;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(0, 0, 33);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+            font-size: 1.2rem;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(153, 153, 226);
+        }
+
+        .left {
+            font-size: 2rem;
+            padding-left: center;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 50px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 3rem;
+            color: rgb(0, 0, 33);
+            text-wrap: nowrap;
+        }
+
+        .about-col-2 .buttons {
+            padding-left: 240px;
+
+        }
+
+        .about-col-2 .btn {
+            padding: 12px;
+            background: #1e2167;
+            color: white;
+            border: 2px solid black;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .rightSection img {
+            width: 80%;
+            transition: transform 0s;
+        }
+
+        .rightSection img:hover {
+            transform: scale(1.1);
+            transition-duration: 5s;
+        }
+
+        .purple {
+            color: rgb(170, 107, 228);
+        }
+
+        #element {
+            color: rgb(170, 107, 228);
+            text-wrap: nowrap;
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+        }
+
+        #about {
+            padding: 20px 0;
+            color: rgb(38, 41, 3);
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .about-col-1 {
+            flex-basis: 35%;
+        }
+
+        .about-col-1 img {
+            width: 100%;
+            border: 2px solid black;
+            border-radius: 6px;
+        }
+
+        .about-col-2 {
+            flex-basis: 60%;
+        }
+
+        .about-col-2 .text {
+            padding: 15px;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            font-size: 22px;
+            text-align: justify;
+        }
+
+        .sub-title {
+            font-size: 60px;
+            font-weight: 600;
+            color: rgb(0, 0, 33);
+            text-align: center;
+        }
+
+        #skills {
+            padding: 20px 0;
+            color: rgb(0, 0, 33);
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .skills-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 40px;
+            margin-top: 50px;
+        }
+
+        #skills .skills-list {
+            background: rgb(245, 243, 203);
+            padding: 40px;
+            font-size: 15px;
+            font-weight: 300;
+            border-radius: 10px;
+            transition: background 05s, transform 0.5s;
+        }
+
+        .skills-list img:hover {
+            background: rgb(71, 71, 56);
+            transform: translateY(-10px);
+            cursor: pointer;
+        }
+
+        #projects {
+            padding: 20px 0;
+            font-size: 20px;
+            color: rgb(0, 0, 33);
+            text-align: center;
+        }
+
+        #projects .title {
+            font-size: 60px;
+            font-weight: 600;
+            color: rgb(0, 0, 33);
+            text-align: center;
+        }
+
+        #projects .project-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 40px;
+            margin-top: 50px;
+        }
+
+        .project-1 {
+            color: rgb(1, 26, 125);
+            border-radius: 10px;
+            background-color: rgb(223, 227, 245);
+            height: 380px;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .project-2 {
+            height: 380px;
+            color: rgb(1, 26, 125);
+            border-radius: 10px;
+            background-color: rgb(223, 227, 245);
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .project-3 {
+            height: 380px;
+            color: rgb(1, 26, 125);
+            border-radius: 10px;
+            background-color: rgb(223, 227, 245);
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .project-list .button-1 {
+            padding-left: 240px;
+        }
+
+
+        .project-list .btn {
+            padding: 12px;
+            background: rgb(223, 227, 245);
+            color: white;
+            border: 2px solid black;
+            border-radius: 6px;
+            font-size: 15px;
+            cursor: pointer;
+            position: absolute;
+            bottom: 10%;
+            left: 30%;
+        }
+
+        #contact {
+            padding: 20px 0;
+            font-size: 20px;
+            color: rgb(0, 0, 33);
+            text-align: center;
+        }
+
+        .row {
+            flex-basis: 50%;
+        }
+
+        .row form {
+            width: 100%;
+        }
+
+        form input,
+        form textarea {
+            width: 60%;
+            border: 0;
+            outline: none;
+            background: #262626;
+            padding: 15px;
+            margin: 15px 0;
+            color: #fff;
+            font-size: 18px;
+            border-radius: 6px;
+            text-align: center;
+        }
+
+        .btn.btn3 {
+            background-color: #f9004d;
+            cursor: pointer;
+            font-size: 20px;
+            border: 2px solid #f9004d;
+            border-radius: 5px;
+            padding: 12px;
+            font-weight: bold;
+        }
+        .copyright{
+            width:100%;
+            text-align:center;
+            padding:25px 0;
+            background:rgb(0, 0, 33);
+            font-weight:300;
+            margin-top:20px;
+            color:rgb(223, 227, 245);
+        }
+        
+        html{
+            scroll-behavior:smooth;
+        }
+
+        main hr {
+            border: 0;
+            height: 1.2px;
+            margin: 40px 84px;
+            background: #9c97f1;
+        }
+        
+        #msg{
+            padding-left:40%;
+            padding-top:10px;
+            color:rgb(0, 0, 33);
+            display:block;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Prateek's Portfolio</div>
+            <div class="right"></div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <div id="home">
+        <section class="firstSection">
+            <div class="leftSection">
+                <div>Hi,I am <br>
+                    <span class="purple">Prateek Rasalkar</span></div><br>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="https://yt3.googleusercontent.com/ytc/AOPolaQjZoIqsaAezwOvhi4VtCT71tnvjFWVRBjTsq4ixA=s900-c-k-c0x00ffffff-no-rj" alt="developer">
+            </div>
+        </section>
+
+
+        <section class="secondSection">
+            <div class="icons">
+
+                <a href="https://www.linkedin.com/in/prateek-rasalkar-54653421b/" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg" alt="prateekr0000" height="60" width="60" /></a>
+                <a href="https://www.facebook.com/prateek.rasalkar.3" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/facebook.svg" alt="prateekr0000" height="60" width="60" /></a>
+                <a href="https://www.instagram.com/prateek_rasalkar/" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/instagram.svg" alt="prateekr0000" height="60" width="60" /></a>
+                <a href="https://www.snapchat.com/add/prateek_150902?share_id=jYy0FeszcZ8&locale=en-US" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/snapchat.svg" alt="prateekr0000" height="60" width="60" /></a>
+                <a href="https://youtube.co/@prateekrasalkar1755?si=LVxFFjuOJcJJUDzj" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.2.1/icons/youtube.svg" alt="prateekr0000" height="60" width="60" /></a>
+                <a href="mailto: prasalkar916@gmail.com" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.2.1/icons/mailbox2.svg" alt="prateekr0000" height="60" width="60" /></a>
+                <a href="https://twitter.com/PrateekRasalkar" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.2.1/icons/twitter.svg" alt="prateekr0000" height="60" width="60" /></a>
+                <a href="https://github.com/prateekr0000" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.2.1/icons/github.svg" alt="prateekr0000" height="60" width="60" /></a>
+                <a href="https://t.me/prateek_rasalkar" target="blank"><img align="center" src="https://fontawesomeicons.com/lib/svg/telegram-logo-duotone.svg" alt="prateekr0000" height="40" width="40" /></a>
+            </div>
+        </section>
+        </div>
+        <hr>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="prateek.png">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <div class="text">
+                            <p>My name is Prateek Rasalkar.I am from Sangli,Maharashtra. I am a Final Year student of Electronics Engineering at the Vidyalankar Institute of Technology,Mumbai. I have gained a good understanding in the concepts of Data Analysis, Data Structures and Algorithm,Web Development from relevant courses and projects. <br>I am well experienced in coding in C++, C and Python programming languages.I hold an interest in the domains of Machine Learning, Data Science, Deep Learning as well as Artificial Intelligence. I have created many Data Science Projects. Also,I have worked on many Projects in other domain. I am very passionate for learning new Skills and actively looking for an oppourtunity to present my skills.</p>
+                        </div><br>
+                        <div class="buttons">
+                            <a href="Resume.pdf" download <button class="btn">Download Resume</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        
+        
+        <div id="skills">
+            <div class="container">
+                <h1 class="sub-title">Skills</h1>
+                <p>These are my technical skills</p>
+                <div class="skills-list">
+                    <h3><a target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/c/c.png"  height="60" width="60" /></a><br>C</h3>
+                    <h3><a target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/cpp/cpp.png"  height="60" width="60" /></a><br>C++</h3>
+                    <h3><a target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/python/python.png" height="60" width="60" /></a><br>Python</h3>
+                    <h3><a target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/html/html.png"  height="60" width="60" /></a><br>HTML</h3>
+                    <h3><a target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/css/css.png" height="60" width="60" /></a><br>CSS</h3>
+                    <h3><a target="blank"><img align="center" src="https://w7.pngwing.com/pngs/326/911/png-transparent-deep-learning-with-keras-machine-learning-artificial-intelligence-others-angle-white-text.png" height="60" width="60" /></a><br>Machine Learning</h3>
+                    <h3><a target="blank"><img align="center" src="https://www.vlrtraining.in/wp-content/uploads/2020/10/logo-data-structure.png" height="60" width="60" /></a><br>Data Structures and Algorithms</h3>
+                    <h3><a target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.2.1/icons/github.svg" alt="prateekr0000" height="60" width="60" /></a><br>Git/Github</h3>
+                    <h3><a target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/mysql.svg" height="60" width="60" /></a><br>SQL</h3>
+                    <h3><a target="blank"><img align="center" src="https://i2.wp.com/codes.pratikkataria.com/wp-content/uploads/2016/09/Linecons_database.svg_.png?fit=600%2C600&ssl=1" height="60" width="60" /></a><br>DBMS</h3>
+                    <h3><a target="blank"><img align="center" src="https://w7.pngwing.com/pngs/615/978/png-transparent-developer-development-object-oriented-programming-software-technology-icon-thumbnail.png" height="60" width="60" /></a><br>OOPS</h3>
+                    <h3><a target="blank"><img align="center" src="https://cdn-icons-png.flaticon.com/512/6487/6487595.png" height="60" width="60" /></a><br>Problem Solving</h3>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+
+        <div id="projects">
+            <div class="container">
+                <h1 class="sub-title">Projects</h1>
+                <p>These are my latest Projects.For more projects visit my<a href="https://github.com/prateekr0000"> Github profile.</a></p>
+                <div class="project-list">
+                    <div class="project-1">
+                        <br>
+                        <h3>Sentimental Analysis of Tweets</h3><br><br>
+                        <p>A Twitter sentiment analysis identifies negative, positive, or neutral emotions within the text of a tweet. It is a text analysis using natural language processing (NLP) and machine learning.</p>
+                        <div class="button-1">
+                            <button class="btn"><a href="https://github.com/prateekr0000/Sentimental-Analysis-of-Tweets">Get Details</a></button>
+                        </div>
+                    </div>
+                    <div class="project-2">
+                        <br>
+                        <h3>Brain Tumor Detection</h3><br><br>
+                        <p>In this project, I have build a detection model using a convolutional neural network in Tensorflow & Keras. </p>
+                        <div class="button-1">
+                            <button class="btn"><a href="https://github.com/prateekr0000/Brain-Tumor-Detction">Get Details</a></button>
+                        </div>
+                    </div>
+                    <div class="project-3"><br>
+                        <h3>Color Detection Machine Learning</h3><br>
+                        <p>In this color detection project.I have build the application in python language and get results to use the naïve bayes classifiers, pandas and OpenCV libraries areused in this project which can automatically detect the nameof the color. So we have a dataset which have color names and its value.</p>
+                        <div class="button-1">
+                            <button class="btn"><a href="https://github.com/prateekr0000/Color-Detection-Machine-Learning">Get Details</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+
+
+
+        <div id="contact">
+            <div class="container">
+                <h1 class="sub-title">Contact Me</h1>
+                <p>📱 +91 9850761344</p>
+                <p>📧 prasalkar916@gmail.com</p>
+                <div class="row">
+                    <form nmae="submit-to-google-sheet">
+                        <input type="text" name="Full Name" placeholder="Your Name" required>
+                        <input type="email"  name="email" placeholder="Your Email" required>
+                        <input type="tel" name="phone"  placeholder="Your Contact Number" />
+                        <textarea name="Message" rows="2" placeholder="Your Message"></textarea><br>
+                        <button type="submit" class="btn btn3">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+
+<div class="copyright">
+            <p>Copyright © Made by ❤️ Prateek Rasalkar.Published on 15/09/2023.</p>
+            </div>
+        
+    </main>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Data Analyst', 'Web Developer', 'Software Developer', 'Competitive Programmer'],
+            typeSpeed: 80,
+            loop: true,
+            loopCount: Infinity,
+            cursorChar: '|',
+            backSpeed: 80,
+        });
+    </script>
+    
+    <script>
+  const scriptURL = '<https://script.google.com/macros/s/AKfycbwzVb5QGEPT08lCRaMsZDxiiA88a0h3mQmWQ4rbbQ1do2_z4JU1s6oohZN29xCy4iOQ/exec>'
+  const form = document.forms['submit-to-google-sheet']
+ const msg=document.getElementById("msg")
+ 
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+          msg.innerHTML="Thank You for Contacting🙏"
+          setTimeout(function(){
+              msg.innerHTML=""
+          };5000)
+          form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+
+</html>

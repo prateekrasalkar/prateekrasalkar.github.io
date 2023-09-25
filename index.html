@@ -448,10 +448,10 @@
                 <p>📱 +91 9850761344</p>
                 <p>📧 prasalkar916@gmail.com</p>
                 <div class="row">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Full Name" placeholder="Your Name" required>
-                        <input type="email"  name="email" placeholder="Your Email" required>
-                        <input type="tel" name="phone"  placeholder="Your Contact Number" />
+                    <form action="https://formcarry.com/s/kIiV1yL-vx" method="POST" accept-charset="UTF-8">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email"  name="Email" placeholder="Your Email" required>
+                        <input type="tel" name="Phone"  placeholder="Your Contact Number" />
                         <textarea name="Message" rows="2" placeholder="Your Message"></textarea><br>
                         <button type="submit" class="btn btn3">Submit</button>
                     </form>
@@ -475,25 +475,6 @@
             backSpeed: 80,
         });
     </script>
-    
-    <script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbwzVb5QGEPT08lCRaMsZDxiiA88a0h3mQmWQ4rbbQ1do2_z4JU1s6oohZN29xCy4iOQ/exec'
-  const form = document.forms['submit-to-google-sheet']
- const msg=document.getElementById("msg")
- 
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => {
-          msg.innerHTML="Thank You for Contacting🙏"
-          setTimeout(function(){
-              msg.innerHTML=""
-          };5000)
-          form.reset()
-      })
-      .catch(error => console.error('Error!', error.message))
-  })
-</script>
 </body>
 
 </html>

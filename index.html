@@ -313,6 +313,99 @@
             color:rgb(0, 0, 33);
             display:block;
         }
+        @media only screen and (max-width: 435px) {
+            nav {
+                flex-direction: column;
+                height: auto;
+            }
+
+            nav .left {
+                padding-left: 0;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            .firstSection {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .firstSection>div {
+                width: 80%;
+            }
+
+            .leftSection {
+                font-size: 2rem;
+            }
+
+            .rightSection img {
+                width: 100%;
+            }
+
+            .secondSection .icons a {
+                margin: 10px 5px;
+            }
+
+            .row {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .about-col-1,
+            .about-col-2 {
+                flex-basis: 100%;
+                text-align: center;
+            }
+
+            .about-col-2 .buttons {
+                padding-left: 0;
+                margin-top: 10px;
+            }
+
+            .skills-list {
+                grid-template-columns: 1fr;
+                grid-gap: 20px;
+            }
+
+            .skills-list h3 {
+                font-size: 16px;
+            }
+
+            .project-list {
+                grid-template-columns: 1fr;
+                grid-gap: 20px;
+            }
+
+            .project-1,
+            .project-2,
+            .project-3 {
+                height: auto;
+            }
+
+            .project-list .btn {
+                position: static;
+                margin-top: 10px;
+            }
+
+            form input,
+            form textarea {
+                width: 90%;
+            }
+
+            .copyright {
+                padding: 15px 0;
+                font-size: 14px;
+            }
+        }
         
     </style>
     <link rel="icon" href="prateek.png">
